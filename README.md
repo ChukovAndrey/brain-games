@@ -3,3 +3,7 @@
 ### Hexlet tests and linter status:
 ![Actions Status](/workflows/hexlet-check/badge.svg)
 
+## Installation
+[![asciicast](https://asciinema.org/a/cRF9BOXKIfjk5FWg4BtvmIxwp.svg)](https://asciinema.org/a/cRF9BOXKIfjk5FWg4BtvmIxwp)
+## Brain-even game
+[![asciicast](https://asciinema.org/a/37VThZ1jrdoxTAtyfdWaCFYDA.svg)](https://asciinema.org/a/37VThZ1jrdoxTAtyfdWaCFYDA)

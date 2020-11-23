@@ -16,10 +16,10 @@ export default async () => {
   let playerAnswer;
   while (counter > 0) {
     randomNumber = getRandomNumber(MAX_NUMBER);
-    correctAnswer = isEven(randomNumber) ? 'YES' : 'NO';
+    correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
     console.log(`Question: ${randomNumber}`);
     playerAnswer = await getAnswer();
-    if (playerAnswer.toUpperCase() === correctAnswer) {
+    if (playerAnswer.toLowerCase() === correctAnswer) {
       console.log('Correct!');
       counter -= 1;
     } else {

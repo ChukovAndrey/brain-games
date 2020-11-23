@@ -1,10 +1,10 @@
-import promptly from 'promptly';
+import {
+  greeting, getAnswer, win, lose, getRandomNumber,
+} from '../index.js';
 
-const MAX_NUMBER = 100;
+const MAX_NUMBER = 20;
 const SCORE_TO_WIN = 3;
 const OPERATORS = ['+', '-', '*'];
-
-const getRandomNumber = (max) => Math.floor(Math.random() * Math.floor(max));
 
 const getRandomOperator = (arrayOfOperators) => {
   const randomIndex = getRandomNumber(arrayOfOperators.length);
@@ -12,9 +12,7 @@ const getRandomOperator = (arrayOfOperators) => {
 };
 
 export default async () => {
-  console.log('Welcome to the Brain Games!');
-  const name = await promptly.prompt('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+  const name = await greeting();
 
   let counter = SCORE_TO_WIN;
   let firstOperand;
@@ -43,16 +41,15 @@ export default async () => {
     }
     console.log('What is the result of the expression?');
     console.log(`Question: ${firstOperand} ${operator} ${secondOperand}`);
-    playerAnswer = await promptly.prompt('Your answer:  ');
+    playerAnswer = await getAnswer();
 
     if (Number(playerAnswer) === correctAnswer) {
       console.log('Correct!');
       counter -= 1;
     } else {
-      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
+      lose(name, playerAnswer, correctAnswer);
       return;
     }
   }
-  console.log(`Congratulations, ${name}!`);
+  win(name);
 };

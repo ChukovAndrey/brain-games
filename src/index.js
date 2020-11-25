@@ -1,24 +1,29 @@
 import promptly from 'promptly';
+import greeting from './cli.js';
 
-export const greeting = async () => {
-  console.log('Welcome to the Brain Games!');
-  const name = await promptly.prompt('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  return name;
-};
+const SCORE_TO_WIN = 3;
 
-export const getAnswer = async () => {
-  const answer = await promptly.prompt('Your answer:  ');
-  return answer;
-};
+export default async (game) => {
+  const name = await greeting();
 
-export const win = (name) => {
+  const { rules } = game();
+  console.log(rules);
+
+  let counter = SCORE_TO_WIN;
+
+  while (counter > 0) {
+    const { task, correctAnswer } = game();
+    console.log(`Question: ${task}`);
+    const playerAnswer = await promptly.prompt('Your answer:  ');
+
+    if (playerAnswer === String(correctAnswer)) {
+      console.log('Correct!');
+      counter -= 1;
+    } else {
+      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${name}!`);
+      return;
+    }
+  }
   console.log(`Congratulations, ${name}!`);
 };
-
-export const lose = (name, playerAnswer, correctAnswer) => {
-  console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-  console.log(`Let's try again, ${name}!`);
-};
-
-export const getRandomNumber = (max) => Math.floor(Math.random() * Math.floor(max));

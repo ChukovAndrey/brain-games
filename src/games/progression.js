@@ -6,11 +6,10 @@ const HIDE_PATTERN = '..';
 
 const generateProgression = (startingPoint, step, progressionLength) => {
   const progressionArray = [];
-  let progressionValue = startingPoint;
   for (let i = 0; i < progressionLength; i += 1) {
-    progressionArray.push(progressionValue);
-    progressionValue += step;
+    progressionArray.push(startingPoint + step * i);
   }
+
   return progressionArray;
 };
 

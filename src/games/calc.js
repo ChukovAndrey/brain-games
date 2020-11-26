@@ -5,6 +5,7 @@ const OPERATORS = ['+', '-', '*'];
 
 const getRandomOperator = (arrayOfOperators) => {
   const randomIndex = getRandomNumber(arrayOfOperators.length);
+
   return arrayOfOperators[randomIndex];
 };
 

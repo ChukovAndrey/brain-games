@@ -22,6 +22,7 @@ export default async (game) => {
     } else {
       console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
+
       return;
     }
   }

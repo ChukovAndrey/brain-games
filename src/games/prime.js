@@ -9,6 +9,7 @@ const isPrime = (number) => {
       return false;
     }
   }
+
   return true;
 };
 

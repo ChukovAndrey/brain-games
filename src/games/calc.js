@@ -24,7 +24,7 @@ const getExpressionAnswer = (firstOperand, secondOperand, operator) => {
       correctAnswer = firstOperand * secondOperand;
       break;
     default:
-      break;
+      throw new Error(`unsupported operation "${operator}"`);
   }
 
   return correctAnswer;

@@ -20,7 +20,7 @@ const startProgressionGame = () => {
   const step = getRandomNumber(MAX_NUMBER);
   const progression = generateProgression(startingPoint, step, LENGTH_OF_PROGRESSION);
   const randomIndex = getRandomNumber(LENGTH_OF_PROGRESSION - 1);
-  const correctAnswer = progression[randomIndex];
+  const correctAnswer = String(progression[randomIndex]);
   progression[randomIndex] = HIDE_PATTERN;
   const task = `${progression.join(' ')}`;
 

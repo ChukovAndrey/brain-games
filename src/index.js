@@ -17,7 +17,7 @@ export default async (runGame) => {
     console.log(`Question: ${task}`);
     const playerAnswer = await promptly.prompt('Your answer:  ');
 
-    if (playerAnswer === String(correctAnswer)) {
+    if (playerAnswer === correctAnswer) {
       console.log('Correct!');
       counter += 1;
     } else {

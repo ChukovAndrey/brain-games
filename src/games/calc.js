@@ -37,7 +37,7 @@ const startCalcGame = () => {
   const secondOperand = getRandomNumber(MAX_NUMBER);
   const operator = getRandomOperator(OPERATORS);
   const task = `${firstOperand} ${operator} ${secondOperand}`;
-  const correctAnswer = getExpressionAnswer(firstOperand, secondOperand, operator);
+  const correctAnswer = String(getExpressionAnswer(firstOperand, secondOperand, operator));
 
   return { rules, task, correctAnswer };
 };

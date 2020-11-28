@@ -16,7 +16,7 @@ const startGcdGame = () => {
   const firstNumber = getRandomNumber(MAX_NUMBER);
   const secondNumber = getRandomNumber(MAX_NUMBER);
   const task = `${firstNumber} ${secondNumber}`;
-  const correctAnswer = getGcd(firstNumber, secondNumber);
+  const correctAnswer = String(getGcd(firstNumber, secondNumber));
 
   return { rules, task, correctAnswer };
 };

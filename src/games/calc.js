@@ -1,4 +1,4 @@
-import getRandomNumber from '../functions.js';
+import getRandomNumber from '../utils.js';
 import runGame from '../index.js';
 
 const MAX_NUMBER = 20;

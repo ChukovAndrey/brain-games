@@ -7,13 +7,13 @@ export default async (runGame) => {
   const name = await promptly.prompt('May I have your name? ');
   console.log(`Hello, ${name}!`);
 
-  const { rules } = runGame();
-  console.log(rules);
-
   let counter = 0;
 
   while (counter < SCORE_TO_WIN) {
-    const { task, correctAnswer } = runGame();
+    const { rules, task, correctAnswer } = runGame();
+    if (counter === 0) {
+      console.log(rules);
+    }
     console.log(`Question: ${task}`);
     const playerAnswer = await promptly.prompt('Your answer:  ');
 

@@ -1,4 +1,5 @@
 import getRandomNumber from '../functions.js';
+import runGame from '../index.js';
 
 const MAX_NUMBER = 20;
 const OPERATORS = ['+', '-', '*'];
@@ -29,7 +30,7 @@ const getExpressionAnswer = (firstOperand, secondOperand, operator) => {
   return correctAnswer;
 };
 
-export default () => {
+const startCalcGame = () => {
   const rules = 'What is the result of the expression?';
 
   const firstOperand = getRandomNumber(MAX_NUMBER);
@@ -40,3 +41,5 @@ export default () => {
 
   return { rules, task, correctAnswer };
 };
+
+export default () => runGame(startCalcGame);

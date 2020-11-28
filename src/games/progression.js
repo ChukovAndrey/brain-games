@@ -1,4 +1,5 @@
 import getRandomNumber from '../functions.js';
+import runGame from '../index.js';
 
 const MAX_NUMBER = 10;
 const LENGTH_OF_PROGRESSION = 10;
@@ -13,7 +14,7 @@ const generateProgression = (startingPoint, step, progressionLength) => {
   return progressionArray;
 };
 
-export default () => {
+const startProgressionGame = () => {
   const rules = 'What number is missing in the progression?';
   const startingPoint = getRandomNumber(MAX_NUMBER);
   const step = getRandomNumber(MAX_NUMBER);
@@ -25,3 +26,5 @@ export default () => {
 
   return { rules, task, correctAnswer };
 };
+
+export default () => runGame(startProgressionGame);

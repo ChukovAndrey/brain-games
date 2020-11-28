@@ -1,4 +1,4 @@
-import getRandomNumber from '../lib.js';
+import getRandomNumber from '../functions.js';
 
 const MAX_NUMBER = 10;
 const LENGTH_OF_PROGRESSION = 10;

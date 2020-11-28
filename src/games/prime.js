@@ -1,4 +1,4 @@
-import getRandomNumber from '../lib.js';
+import getRandomNumber from '../functions.js';
 
 const isPrime = (number) => {
   if (number < 2) {

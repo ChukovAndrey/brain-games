@@ -2,18 +2,18 @@ import promptly from 'promptly';
 
 const SCORE_TO_WIN = 3;
 
-export default async (game) => {
+export default async (runGame) => {
   console.log('Welcome to the Brain Games!');
   const name = await promptly.prompt('May I have your name? ');
   console.log(`Hello, ${name}!`);
 
-  const { rules } = game();
+  const { rules } = runGame();
   console.log(rules);
 
   let counter = SCORE_TO_WIN;
 
   while (counter > 0) {
-    const { task, correctAnswer } = game();
+    const { task, correctAnswer } = runGame();
     console.log(`Question: ${task}`);
     const playerAnswer = await promptly.prompt('Your answer:  ');
 

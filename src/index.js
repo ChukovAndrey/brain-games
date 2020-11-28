@@ -10,16 +10,16 @@ export default async (runGame) => {
   const { rules } = runGame();
   console.log(rules);
 
-  let counter = SCORE_TO_WIN;
+  let counter = 0;
 
-  while (counter > 0) {
+  while (counter < SCORE_TO_WIN) {
     const { task, correctAnswer } = runGame();
     console.log(`Question: ${task}`);
     const playerAnswer = await promptly.prompt('Your answer:  ');
 
     if (playerAnswer === String(correctAnswer)) {
       console.log('Correct!');
-      counter -= 1;
+      counter += 1;
     } else {
       console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);

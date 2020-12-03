@@ -5,10 +5,10 @@ const RULES = 'What is the result of the expression?';
 const MAX_NUMBER = 20;
 const OPERATORS = ['+', '-', '*'];
 
-const getRandomOperator = (arrayOfOperators) => {
-  const randomIndex = getRandomNumber(arrayOfOperators.length);
+const getRandomOperator = () => {
+  const randomIndex = getRandomNumber(OPERATORS.length);
 
-  return arrayOfOperators[randomIndex];
+  return OPERATORS[randomIndex];
 };
 
 const getExpressionAnswer = (firstOperand, secondOperand, operator) => {
@@ -27,7 +27,7 @@ const getExpressionAnswer = (firstOperand, secondOperand, operator) => {
 const startCalcGame = () => {
   const firstOperand = getRandomNumber(MAX_NUMBER);
   const secondOperand = getRandomNumber(MAX_NUMBER);
-  const operator = getRandomOperator(OPERATORS);
+  const operator = getRandomOperator();
   const task = `${firstOperand} ${operator} ${secondOperand}`;
   const correctAnswer = String(getExpressionAnswer(firstOperand, secondOperand, operator));
 

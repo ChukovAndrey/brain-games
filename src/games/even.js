@@ -1,14 +1,15 @@
 import getRandomNumber from '../utils.js';
 import runGame from '../index.js';
 
+const RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const isEven = (number) => number % 2 === 0;
 
 const startEvenGame = () => {
-  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
   const task = getRandomNumber();
   const correctAnswer = isEven(task) ? 'yes' : 'no';
 
-  return { rules, task, correctAnswer };
+  return { task, correctAnswer };
 };
 
-export default () => runGame(startEvenGame);
+export default () => runGame(RULES, startEvenGame);

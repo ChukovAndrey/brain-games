@@ -3,7 +3,38 @@
 ### Hexlet tests and linter status:
 ![Actions Status](/workflows/hexlet-check/badge.svg)
 
+# Brain-games (console games written in javascript)
 ## Installation
+```
+git clone https://github.com/ChukovAndrey/frontend-project-lvl1.git
+```
+```
+cd frontend-project-lvl1
+```
+```
+make install
+```
+```
+sudo npm link
+```
+To start a game use commands listed below
+```
+brain-calc
+```
+```
+brain-even
+```
+```
+brain-gcd
+```
+```
+brain-prime
+```
+```
+brain-progression
+```
+Installation example:
+
 [![asciicast](https://asciinema.org/a/cRF9BOXKIfjk5FWg4BtvmIxwp.svg)](https://asciinema.org/a/cRF9BOXKIfjk5FWg4BtvmIxwp)
 ## Brain-even game
 [![asciicast](https://asciinema.org/a/37VThZ1jrdoxTAtyfdWaCFYDA.svg)](https://asciinema.org/a/37VThZ1jrdoxTAtyfdWaCFYDA)

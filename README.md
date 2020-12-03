@@ -48,5 +48,5 @@ brain-progression
 ### Brain-progression game example
 [![asciicast](https://asciinema.org/a/3ziPHoecxC3ZqrzVAqNqdFu2K.svg)](https://asciinema.org/a/3ziPHoecxC3ZqrzVAqNqdFu2K)
 
-## Brain-prime game example
+### Brain-prime game example
 [![asciicast](https://asciinema.org/a/PqQI3B9A19nHLgUc3O0Nwgpgm.svg)](https://asciinema.org/a/PqQI3B9A19nHLgUc3O0Nwgpgm)

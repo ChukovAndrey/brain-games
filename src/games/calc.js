@@ -12,23 +12,16 @@ const getRandomOperator = (arrayOfOperators) => {
 };
 
 const getExpressionAnswer = (firstOperand, secondOperand, operator) => {
-  let correctAnswer;
-
   switch (operator) {
     case '+':
-      correctAnswer = firstOperand + secondOperand;
-      break;
+      return firstOperand + secondOperand;
     case '-':
-      correctAnswer = firstOperand - secondOperand;
-      break;
+      return firstOperand - secondOperand;
     case '*':
-      correctAnswer = firstOperand * secondOperand;
-      break;
+      return firstOperand * secondOperand;
     default:
       throw new Error(`unsupported operation "${operator}"`);
   }
-
-  return correctAnswer;
 };
 
 const startCalcGame = () => {

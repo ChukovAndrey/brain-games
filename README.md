@@ -36,17 +36,17 @@ brain-progression
 ### Installation example:
 
 [![asciicast](https://asciinema.org/a/cRF9BOXKIfjk5FWg4BtvmIxwp.svg)](https://asciinema.org/a/cRF9BOXKIfjk5FWg4BtvmIxwp)
-### Brain-even game example
+### Brain-even game example:
 [![asciicast](https://asciinema.org/a/37VThZ1jrdoxTAtyfdWaCFYDA.svg)](https://asciinema.org/a/37VThZ1jrdoxTAtyfdWaCFYDA)
 
-### Brain-calc game example
+### Brain-calc game example:
 [![asciicast](https://asciinema.org/a/XAnMfSbiZdmt6NJuIJDCvNUy8.svg)](https://asciinema.org/a/XAnMfSbiZdmt6NJuIJDCvNUy8)
 
-### Brain-gcd game example
+### Brain-gcd game example:
 [![asciicast](https://asciinema.org/a/thrXlfKjp5jHLSTUxDu8tpNZp.svg)](https://asciinema.org/a/thrXlfKjp5jHLSTUxDu8tpNZp)
 
-### Brain-progression game example
+### Brain-progression game example:
 [![asciicast](https://asciinema.org/a/3ziPHoecxC3ZqrzVAqNqdFu2K.svg)](https://asciinema.org/a/3ziPHoecxC3ZqrzVAqNqdFu2K)
 
-### Brain-prime game example
+### Brain-prime game example:
 [![asciicast](https://asciinema.org/a/PqQI3B9A19nHLgUc3O0Nwgpgm.svg)](https://asciinema.org/a/PqQI3B9A19nHLgUc3O0Nwgpgm)

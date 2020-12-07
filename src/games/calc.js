@@ -11,7 +11,7 @@ const getRandomOperator = () => {
   return OPERATORS[randomIndex];
 };
 
-const getExpressionAnswer = (firstOperand, secondOperand, operator) => {
+const getOperationAnswer = (firstOperand, secondOperand, operator) => {
   switch (operator) {
     case '+':
       return firstOperand + secondOperand;
@@ -29,7 +29,7 @@ const startCalcGame = () => {
   const secondOperand = getRandomNumber(MAX_NUMBER);
   const operator = getRandomOperator();
   const task = `${firstOperand} ${operator} ${secondOperand}`;
-  const correctAnswer = String(getExpressionAnswer(firstOperand, secondOperand, operator));
+  const correctAnswer = String(getOperationAnswer(firstOperand, secondOperand, operator));
 
   return { task, correctAnswer };
 };

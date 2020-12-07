@@ -15,7 +15,7 @@ const generateProgression = (startingPoint, step, progressionLength) => {
   return progressionArray;
 };
 
-const startProgressionGame = () => {
+const generateProgressionGameData = () => {
   const startingPoint = getRandomNumber(MAX_NUMBER);
   const step = getRandomNumber(MAX_NUMBER);
   const progression = generateProgression(startingPoint, step, LENGTH_OF_PROGRESSION);
@@ -27,4 +27,4 @@ const startProgressionGame = () => {
   return { task, correctAnswer };
 };
 
-export default () => runGame(RULES, startProgressionGame);
+export default () => runGame(RULES, generateProgressionGameData);

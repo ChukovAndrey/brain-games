@@ -24,7 +24,7 @@ const getOperationAnswer = (firstOperand, secondOperand, operator) => {
   }
 };
 
-const startCalcGame = () => {
+const generateCalcGameData = () => {
   const firstOperand = getRandomNumber(MAX_NUMBER);
   const secondOperand = getRandomNumber(MAX_NUMBER);
   const operator = getRandomOperator();
@@ -34,4 +34,4 @@ const startCalcGame = () => {
   return { task, correctAnswer };
 };
 
-export default () => runGame(RULES, startCalcGame);
+export default () => runGame(RULES, generateCalcGameData);

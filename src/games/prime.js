@@ -17,11 +17,11 @@ const isPrime = (number) => {
   return true;
 };
 
-const startPrimeGame = () => {
+const generatePrimeGameData = () => {
   const task = getRandomNumber(MAX_NUMBER);
   const correctAnswer = isPrime(task) ? 'yes' : 'no';
 
   return { task, correctAnswer };
 };
 
-export default () => runGame(RULES, startPrimeGame);
+export default () => runGame(RULES, generatePrimeGameData);

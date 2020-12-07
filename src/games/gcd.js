@@ -12,7 +12,7 @@ const getGcd = (num1, num2) => {
   return getGcd(num2, num1 % num2);
 };
 
-const startGcdGame = () => {
+const generateGcdGameData = () => {
   const firstNumber = getRandomNumber(MAX_NUMBER);
   const secondNumber = getRandomNumber(MAX_NUMBER);
   const task = `${firstNumber} ${secondNumber}`;
@@ -21,4 +21,4 @@ const startGcdGame = () => {
   return { task, correctAnswer };
 };
 
-export default () => runGame(RULES, startGcdGame);
+export default () => runGame(RULES, generateGcdGameData);

@@ -1,7 +1,7 @@
 import getRandomNumber from '../generateRandomNumber.js';
 import runGame from '../index.js';
 
-const RULES = 'What is the result of the expression?';
+const RULE = 'What is the result of the expression?';
 const MAX_NUMBER = 20;
 const OPERATORS = ['+', '-', '*'];
 
@@ -34,4 +34,4 @@ const generateCalcGameData = () => {
   return { task, correctAnswer };
 };
 
-export default () => runGame(RULES, generateCalcGameData);
+export default () => runGame(RULE, generateCalcGameData);

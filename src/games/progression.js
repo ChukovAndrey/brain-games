@@ -1,7 +1,7 @@
 import getRandomNumber from '../generateRandomNumber.js';
 import runGame from '../index.js';
 
-const RULES = 'What number is missing in the progression?';
+const RULE = 'What number is missing in the progression?';
 const MAX_NUMBER = 10;
 const LENGTH_OF_PROGRESSION = 10;
 const HIDE_PATTERN = '..';
@@ -27,4 +27,4 @@ const generateProgressionGameData = () => {
   return { task, correctAnswer };
 };
 
-export default () => runGame(RULES, generateProgressionGameData);
+export default () => runGame(RULE, generateProgressionGameData);

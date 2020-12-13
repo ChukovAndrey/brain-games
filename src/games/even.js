@@ -2,7 +2,7 @@ import getRandomNumber from '../generateRandomNumber.js';
 import runGame from '../index.js';
 
 const MAX_NUMBER = 100;
-const RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
+const RULE = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => number % 2 === 0;
 
@@ -13,4 +13,4 @@ const generateEvenGameData = () => {
   return { task, correctAnswer };
 };
 
-export default () => runGame(RULES, generateEvenGameData);
+export default () => runGame(RULE, generateEvenGameData);

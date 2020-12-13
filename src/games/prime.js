@@ -2,7 +2,7 @@ import getRandomNumber from '../generateRandomNumber.js';
 import runGame from '../index.js';
 
 const MAX_NUMBER = 100;
-const RULES = 'Answer "yes" if the number is prime. Otherwise answer "no".';
+const RULE = 'Answer "yes" if the number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -24,4 +24,4 @@ const generatePrimeGameData = () => {
   return { task, correctAnswer };
 };
 
-export default () => runGame(RULES, generatePrimeGameData);
+export default () => runGame(RULE, generatePrimeGameData);

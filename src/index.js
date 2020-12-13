@@ -2,11 +2,11 @@ import promptly from 'promptly';
 
 const SCORE_TO_WIN = 3;
 
-export default async (rules, generateGameData) => {
+export default async (rule, generateGameData) => {
   console.log('Welcome to the Brain Games!');
   const name = await promptly.prompt('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(rules);
+  console.log(rule);
 
   let counter = 0;
 

@@ -22,7 +22,7 @@ const generateProgressionGameData = () => {
   const randomIndex = getRandomNumber(LENGTH_OF_PROGRESSION - 1);
   const correctAnswer = String(progression[randomIndex]);
   progression[randomIndex] = HIDE_PATTERN;
-  const task = `${progression.join(' ')}`;
+  const task = progression.join(' ');
 
   return { task, correctAnswer };
 };
